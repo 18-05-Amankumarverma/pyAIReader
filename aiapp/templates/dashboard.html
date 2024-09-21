@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>PDF Upload</title>
+</head>
+
+<body>
+    <h1>Upload a PDF File</h1>
+
+    <div class="extractedtextwithspeakerbtn">
+    <form action="" method="post" enctype="multipart/form-data" class="uploadform">
+        {% csrf_token %}
+        <img src="https://static.vecteezy.com/system/resources/previews/004/968/634/original/drag-and-drop-add-new-file-or-image-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg" alt="">
+        {{ form.as_p }}
+        <button type="submit" class="uploadbtn">Upload</button>
+    </form>
+
+    {% if extracted_text %}
+        <h2 class="extractedtext">Extracted Text:</h2>
+        <pre class="extractedtext">{{ extracted_text }}</pre>
+        <form action="{% url 'read_text' %}" method="post" class="speakerform">
+            {% csrf_token %}
+            <input type="hidden" name="text" value="{{ extracted_text|escape }}">
+            <button type="submit" class="speakerbtn">Read Aloud</button>
+        </form>
+        
+    </div>
+    {% endif %}
+</body>
+
+</html>

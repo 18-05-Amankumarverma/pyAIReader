@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color:#303030;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    color:orange;
+    font-size: 50px;
+    padding: 0px 0px;
+    margin: 30px 0px;
+}
+
+.extractedtext {
+    color: rgb(29, 27, 27);
+}
+
+.extractedtextwithspeakerbtn {
+    width: 450px;
+    margin: 0px auto;
+    padding: 20px 20px;
+    background-color:aliceblue;
+}
+
+input[type="file"] {
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    padding: 10px;
+    display: none;
+}
+
+.uploadbtn {
+    height: 45px;
+    width: 100%;
+    background-color:orange;
+    border: none;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0px;
+    font-size:22px;
+}
+
+.speakerbtn {
+    height: 45px;
+    width: 100%;
+    background-color:orange;
+    border: none;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0px;
+    font-size:22px;
+
+}
+
+pre {
+    overflow: scroll;
+}
+
+pre::-webkit-scrollbar {
+    display: none;
+}
+
+label {
+    height: 300px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img {
+    width: 100px;
+    position: absolute;
+    z-index: 9999;
+    top: 45%;
+    left: 50%;
+    mix-blend-mode:multiply;
+    transform: translate(-50%, -50%);
+}
