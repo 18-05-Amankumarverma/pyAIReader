@@ -16,7 +16,7 @@ A Django web application that allows users to upload files, extracts text from t
 
 - Django
 - Python
-- Text extraction libraries (e.g., `PyPDF2`, `python-docx`)
+- Text extraction libraries (e.g., `PyPDF2` or `python-docx`)
 - Text-to-speech libraries (e.g., `gTTS` or `pyttsx3`)
 - HTML/CSS for frontend
 
@@ -26,14 +26,16 @@ A Django web application that allows users to upload files, extracts text from t
 
    ```bash
    git clone https://github.com/yourusername/text-to-audio-converter.git
-   cd text-to-audio-converter
-
-
+   cd aiapp
    ```
    ### Create a virtual environment:
-   > python -m venv venv
-   > source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
+   ```bash
+   python -m venv venv
+   ```
+   ```bash
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+   
    ### Run the Django development server:
    > python manage.py runserver
    
