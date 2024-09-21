@@ -40,27 +40,27 @@ A Django web application that allows users to upload files, extracts text from t
    > python manage.py runserver
    
 
-### Access the application:
+## Access the application:
 
-#### Open your web browser and go to http://127.0.0.1:8000/.
+## Open your web browser and go to http://127.0.0.1:8000/.
 
-### Usage
+## Usage
 
-### Navigate to the homepage.
+## Navigate to the homepage.
 Upload your file using the provided form.
 Click on the "Convert" button.
 Wait for the audio file to be generated and download it.
 Contributing
 Contributions are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
 
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Acknowledgments
+## Acknowledgments
 Thanks to the contributors of the libraries used in this project.
 Inspired by various open-source projects.
 
-### Contact
+## Contact
 For any questions or suggestions, feel free to reach out.
 
 Feel free to modify any sections to better fit your project specifics, such as adjusting the technologies or installation steps. Let me know if you need any more help!
