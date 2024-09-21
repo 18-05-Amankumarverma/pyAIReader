@@ -25,7 +25,7 @@ A Django web application that allows users to upload files, extracts text from t
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/text-to-audio-converter.git
+   git clone https://github.com/18-05-Amankumarverma/pyAIReader.git
    cd aiapp
    ```
    ### Create a virtual environment:
